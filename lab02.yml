@@ -14,3 +14,4 @@ topology:
 
   links:
     - endpoints: ["nokia-rt2:e1-1", "PC2:eth1"]
+    - endpoints: ["nokia-rt2:e1-2", "host:srl2-eth1"]
