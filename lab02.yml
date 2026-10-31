@@ -1,0 +1,16 @@
+name: lab02
+
+topology:
+  nodes:
+    nokia-rt2:
+      kind: nokia_srlinux
+      image: ghcr.io/nokia/srlinux:24.10.1
+      type: ixr-d3
+      #startup-config: configs/rt-ufinet.cfg 
+
+    PC2:
+      kind: linux
+      image: esanchezv/kali-python3:latest
+
+  links:
+    - endpoints: ["nokia-rt2:e1-1", "PC2:eth1"]
